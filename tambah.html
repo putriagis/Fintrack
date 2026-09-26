@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Transaksi</title>
+</head>
+<body>
+
+    <header>
+        <p><strong>Fintrack</strong></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tambah.html">Tambah Transaksi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Tambah Transaksi</h1>
+        <p>Isi Form di bawah ini untuk mencatat pemasukan dan pengeluaran baru anda.</p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Data Transaksi</legend>
+
+                <p>
+                    <label for="tanggal">Tanggal</label> <br>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                </p>
+                <p>
+                    <label for="keterangan">Keterangan</label><br>
+                    <input type="text" id="keterangan" name="keterangan" placeholder="contoh:Sarapan" required>
+                </p>
+
+                <p>
+                    <label for="jenis">Jenis Transaksi</label><br>
+                    <select id="jenis" name="jenis" required>
+                        <option value="">-- Pilih Jenis --</option>
+                        <option value="pemasukan">Pemasukan</option>
+                        <option value="pengeluaran">Pengeluaran</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="kategori">Kategori</label><br>
+                    <select id="kategori" name="kategori" required>
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="uang-saku">Uang Saku</option>
+                        <option value="makanan">Makanan</option>
+                        <option value="transportasi">Transportasi</option>
+                        <option value="kebutuhan-bulanan">Kebutuhan Bulanan</option>
+                        <option value="tabungan">Tabungan</option>
+                        <option value="hiburan">Hiburan</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <label for="nominal">Nominal (Rp)</label><br>
+                    <input type="text" id="nominal" name="nominal" placeholder="Contoh:10000" required>
+                </p>
+
+                <p>
+                    <label for="struk">Foto Struk (opsional)</label><br>
+                    <input type="file" id="struk" name="struk" accept="image/*">
+                </p>
+
+                <p>
+                    <label for="catatan">Catatan</label><br>
+                    <textarea id="catatan" name="catatan" rows="4" cols="40" placeholder="Tambahkan catatan jika diperlukan"></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Simpan Transaksi</button>
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+
+        <p><a href="index.html">&larr; Kembali ke Daftar Transaksi</a></p>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Fintrack. Dibuat oleh Putri Nurhayati Balqis (103022400081).</p>
+        </footer>
+
+</body>
+</html>
