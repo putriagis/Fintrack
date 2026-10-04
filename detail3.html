@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Transaksi</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     
-    <header>
-        <p><strong>Fintrack</strong></p>
+    <header class="navbar">
+       <a href="index.html" class="navbar-brand">
+            <img src="assets/logo-fintrack.png" alt="Logo Fintrack">
+            Fin<span>Track</span>
+        </a>
         <nav>
             <ul>
-                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html" class="aktif">Beranda</a></li>
                 <li><a href="tambah.html">Tambah Transaksi</a></li>
             </ul>
         </nav>
@@ -26,14 +30,15 @@
             <p>Dicatat pada <time datetime="2026-09-26"> 26 September 2026</time></p>
         </header>
 
-         <img src="assets/transportasi.png" alt="Bukti Transaksi pengeluaran transportasi" width="200">
-
-        <h3>Informasi Transaksi</h3>
+        <div class="detail-isi">
+            <img src="assets/transportasi.png" alt="Bukti Transaksi pengeluaran transportasi">
+            <div>
+                <h3>Informasi Transaksi</h3>
         <table>
             <tbody>
                 <tr>
                     <th>Jenis</th>
-                    <td>Pengeluaran</td>
+                    <td><span class="jenis pengeluaran">Pengeluaran</span></td>
                 </tr>
                 <tr>
                     <th>Kategori</th>
@@ -41,7 +46,7 @@
                 </tr>
                 <tr>
                     <th>Nominal</th>
-                    <td>Rp42.000</td>
+                    <td><span class=pengeluaran><strong>Rp42.000</strong></span></td>
                 </tr>
                 <tr>
                     <th>Tanggal</th>
@@ -52,13 +57,15 @@
 
         <h3>Catatan</h3>
         <p>Gojek ke kampus</p>
-
+            </div>
+        </div>
+         
         <footer>
-            <p><a href="tambah.html">Edit Transaksi</a></p>
-            <p><a href="index.html">&larr; Kembali ke Daftar Transaksi</a></p>
+            <a href="tambah.html">Edit Transaksi</a>
+            <a href="index.html">&larr; Kembali ke Daftar Transaksi</a>
         </footer>
     </article>  
-    </main>
+</main>
 
     <footer>
         <p>&copy; 2026 FinTrack. Dibuat oleh Putri Nurhayati Balqis (103022400081).</p>

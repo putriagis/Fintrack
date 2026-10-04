@@ -4,47 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Transaksi</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-    <header>
-        <p><strong>Fintrack</strong></p>
+    <header class="navbar">
+        <a href="index.html" class="navbar-brand">
+            <img src="assets/logo-fintrack.png" alt="Logo Fintrack">
+            Fin<span>Track</span>
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Beranda</a></li>
-                <li><a href="tambah.html">Tambah Transaksi</a></li>
+                <li><a href="tambah.html" class="aktif">Tambah Transaksi</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+     <main>
         <h1>Tambah Transaksi</h1>
-        <p>Isi Form di bawah ini untuk mencatat pemasukan dan pengeluaran baru anda.</p>
+        <p>Isi form di bawah ini untuk mencatat pemasukan dan pengeluaran baru anda.</p>
+
+        <ol>
+            <li>Pilih tanggal transaksi.</li>
+            <li>Pilih jenis: <strong>Pemasukan</strong> atau <strong>Pengeluaran</strong>.</li>
+            <li>Isi nominal tanpa titik, contoh: 10000.</li>
+        </ol>
 
         <form action="#" method="post">
             <fieldset>
                 <legend>Data Transaksi</legend>
 
-                <p>
-                    <label for="tanggal">Tanggal</label> <br>
+                <div>
+                    <label for="tanggal">Tanggal</label>
                     <input type="date" id="tanggal" name="tanggal" required>
-                </p>
-                <p>
-                    <label for="keterangan">Keterangan</label><br>
-                    <input type="text" id="keterangan" name="keterangan" placeholder="contoh:Sarapan" required>
-                </p>
+                </div>
 
-                <p>
-                    <label for="jenis">Jenis Transaksi</label><br>
+                <div>
+                    <label for="keterangan">Keterangan</label>
+                    <input type="text" id="keterangan" name="keterangan" placeholder="Contoh: Sarapan" required>
+                </div>
+
+                <div>
+                    <label for="jenis">Jenis Transaksi</label>
                     <select id="jenis" name="jenis" required>
                         <option value="">-- Pilih Jenis --</option>
                         <option value="pemasukan">Pemasukan</option>
                         <option value="pengeluaran">Pengeluaran</option>
                     </select>
-                </p>
+                </div>
 
-                <p>
-                    <label for="kategori">Kategori</label><br>
+                <div>
+                    <label for="kategori">Kategori</label>
                     <select id="kategori" name="kategori" required>
                         <option value="">-- Pilih Kategori --</option>
                         <option value="uang-saku">Uang Saku</option>
@@ -54,36 +65,35 @@
                         <option value="tabungan">Tabungan</option>
                         <option value="hiburan">Hiburan</option>
                     </select>
-                </p>
-                
-                <p>
-                    <label for="nominal">Nominal (Rp)</label><br>
-                    <input type="text" id="nominal" name="nominal" placeholder="Contoh:10000" required>
-                </p>
+                </div>
 
-                <p>
-                    <label for="struk">Foto Struk (opsional)</label><br>
+                <div>
+                    <label for="nominal">Nominal (Rp)</label>
+                    <input type="number" id="nominal" name="nominal" placeholder="Contoh: 10000" min="0" required>
+                </div>
+
+                <div>
+                    <label for="struk">Foto Struk (opsional)</label>
                     <input type="file" id="struk" name="struk" accept="image/*">
-                </p>
+                </div>
 
-                <p>
-                    <label for="catatan">Catatan</label><br>
-                    <textarea id="catatan" name="catatan" rows="4" cols="40" placeholder="Tambahkan catatan jika diperlukan"></textarea>
-                </p>
+                <div>
+                    <label for="catatan">Catatan</label>
+                    <textarea id="catatan" name="catatan" rows="4" placeholder="Tambahkan catatan jika diperlukan"></textarea>
+                </div>
             </fieldset>
 
-            <p>
-                <button type="submit">Simpan Transaksi</button>
+            <div class="tombol-grup">
                 <button type="reset">Reset</button>
-            </p>
+                <button type="submit">Simpan Transaksi</button>
+            </div>
         </form>
 
         <p><a href="index.html">&larr; Kembali ke Daftar Transaksi</a></p>
-        </main>
+    </main>
 
-        <footer>
-            <p>&copy; 2026 Fintrack. Dibuat oleh Putri Nurhayati Balqis (103022400081).</p>
-        </footer>
-
+    <footer>
+        <p>&copy; 2026 FinTrack. Dibuat oleh Putri Nurhayati Balqis (103022400081).</p>
+    </footer>
 </body>
 </html>

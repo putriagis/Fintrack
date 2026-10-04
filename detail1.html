@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Transaksi</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     
-    <header>
-        <p><strong>Fintrack</strong></p>
+     <header class="navbar">
+        <a href="index.html" class="navbar-brand">
+            <img src="assets/logo-fintrack.png" alt="Logo Fintrack">
+            Fin<span>Track</span>
+        </a>
         <nav>
             <ul>
-                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html" class="aktif">Beranda</a></li>
                 <li><a href="tambah.html">Tambah Transaksi</a></li>
             </ul>
         </nav>
@@ -26,38 +30,42 @@
             <p>Dicatat pada <time datetime="2026-09-01"> 01 September 2026</time></p>
         </header>
 
-         <img src="assets/pemasukan.jpg" alt="Bukti Transaksi pemasukan uang bulanan" width="200">
+         <div class="detail-isi">
+                <img src="assets/pemasukan.jpg" alt="Bukti transaksi pemasukan uang saku bulanan">
 
-        <h3>Informasi Transaksi</h3>
-        <table>
-            <tbody>
-                <tr>
-                    <th>Jenis</th>
-                    <td>Pemasukan</td>
-                </tr>
-                <tr>
-                    <th>Kategori</th>
-                    <td>Uang Saku</td>
-                </tr>
-                <tr>
-                    <th>Nominal</th>
-                    <td>Rp1.000.000</td>
-                </tr>
-                <tr>
-                    <th>Tanggal</th>
-                    <td>01-09-2026</td>
-                </tr>
-            </tbody>
-        </table>
+                <div>
+                    <h3>Informasi Transaksi</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>Jenis</th>
+                                <td><span class="jenis pemasukan">Pemasukan</span></td>
+                            </tr>
+                            <tr>
+                                <th>Kategori</th>
+                                <td>Uang Saku</td>
+                            </tr>
+                            <tr>
+                                <th>Nominal</th>
+                                <td><span class="pemasukan"><strong>Rp1.000.000</strong></span></td>
+                            </tr>
+                            <tr>
+                                <th>Tanggal</th>
+                                <td>01-09-2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-        <h3>Catatan</h3>
-        <p>Uang Saku Bulan September</p>
+                    <h3>Catatan</h3>
+                    <p>Uang saku bulan September.</p>
+                </div>
+            </div>
 
-        <footer>
-            <p> <a href="tambah.html">Edit Transaksi</a></p>
-            <p><a href="index.html">&larr; Kembali ke Daftar Transaksi</a></p>
-        </footer>
-    </article>  
+            <footer>
+                <a href="tambah.html">Edit Transaksi</a>
+                <a href="index.html">&larr; Kembali ke Daftar Transaksi</a>
+            </footer>
+        </article>
     </main>
 
     <footer>

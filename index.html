@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fintrack - Financial Tracker</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     
-    <header>
-        <p><strong>Fintrack</strong></p>
+    <header class="navbar">
+        <a href="index.html" class="navbar-brand">
+            <img src="assets/logo-fintrack.png" alt="Logo Fintrack">
+            Fin<span>Track</span>
+        </a>
+        
         <nav>
             <ul>
-                <li><a href="index.html">Beranda</a></li>
+                <li><a href="index.html" class="aktif">Beranda</a></li>
                 <li><a href="tambah.html">Tambah Transaksi</a></li>
             </ul>
         </nav>
@@ -22,16 +27,28 @@
         <p>Berikut Daftar pemasukan dan pengeluaran anda:</p>
 
         <section>
-            <h2>Ringkasan Saldo</h2>
-            <p>Total Pemasukan: <strong>Rp1.000.000</strong></p>
-            <p>Total Pengeluaran: <strong>Rp63.000</strong></p>
-            <p>Sisa Saldo: <strong>Rp937.000</strong></p>
+           <h2>Ringkasan Saldo</h2>
+            <div class="ringkasan">
+                <div class="kartu-saldo">
+                    <span class="label">Total Pemasukan</span>
+                    <span class="nominal pemasukan">Rp1.000.000</span>
+                </div>
+                <div class="kartu-saldo">
+                    <span class="label">Total Pengeluaran</span>
+                    <span class="nominal pengeluaran">Rp63.000</span>
+                </div>
+                <div class="kartu-saldo">
+                    <span class="label">Sisa Saldo</span>
+                    <span class="nominal" id="sisa-saldo">Rp937.000</span>
+                </div>
+            </div>
         </section>
 
     <section>
         <h2>Riwayat Transaksi</h2>
         <p><a href="tambah.html">+ Tambah Transaksi Baru</a></p>
 
+    <div class="tabel-wrapper">
     <table>
         <caption>Riwayat Transaksi Bulan September 2026</caption>
         <thead>
@@ -47,36 +64,36 @@
         </thead>
         <tbody>
             <tr>
-                <td>1</td>
+                <td class="tengah">1</td>
                 <td>01-09-2026</td>
                 <td>uang saku bulanan</td>
-                <td>Pemasukan</td>
+                <td class="tengah"><span class="jenis pemasukan">Pemasukan</span></td>
                 <td>Uang Saku</td>
-                <td>Rp1.000.000</td>
-                <td><a href="detail1.html">Detail</a></td>
+                <td class="angka">Rp1.000.000</td>
+                <td  class="tengah"><a href="detail1.html">Detail</a></td>
             </tr>
             <tr>
-                <td>2</td>
+                <td class="tengah">2</td>
                 <td>05-09-2026</td>
                 <td>sarapan</td>
-                <td>Pengeluaran</td>
+                <td class="tengah"><span class="jenis pengeluaran">Pengeluaran</span></td>
                 <td>Makanan</td>
-                <td>Rp21.000</td>
-                <td><a href="detail2.html">Detail</a></td>
+                <td class="angka">Rp21.000</td>
+                <td class="tengah"><a href="detail2.html">Detail</a></td>
             </tr>
         
             <tr>
-                <td>3</td>
+                <td class="tengah">3</td>
                 <td>26-09-2026</td>
                 <td>Gojek</td>
-                <td>Pengeluaran</td>
+                <td class="tengah"><span class="jenis pengeluaran">Pengeluaran</span></td>
                 <td>Transportasi</td>
-                <td>Rp42.000</td>
-                <td><a href="detail3.html">Detail</a></td>
+                <td class="angka">Rp42.000</td>
+                <td class="tengah"><a href="detail3.html">Detail</a></td>
             </tr>
-
         </tbody>
     </table>
+    </div>
     </section>
     </main>
 
