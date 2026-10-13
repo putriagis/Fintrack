@@ -1,104 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fintrack - Financial Tracker</title>
-     <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    
-    <header class="navbar">
-        <a href="index.html" class="navbar-brand">
-            <img src="assets/logo-fintrack.png" alt="Logo Fintrack">
-            Fin<span>Track</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinTrack - Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-fintrack sticky-top">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold fs-4" href="index.html">
+          <img
+            src="assets/logo-fintrack.png"
+            alt="Logo FinTrack"
+            class="me-2"
+          />
+          Fin<span>Track</span>
         </a>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html" class="aktif">Beranda</a></li>
-                <li><a href="tambah.html">Tambah Transaksi</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>  
-        <h1>Daftar Transaksi</h1>
-        <p>Berikut Daftar pemasukan dan pengeluaran anda:</p>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuFintrack"
+          aria-controls="menuFintrack"
+          aria-expanded="false"
+          aria-label="Buka menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <section>
-           <h2>Ringkasan Saldo</h2>
-            <div class="ringkasan">
-                <div class="kartu-saldo">
-                    <span class="label">Total Pemasukan</span>
-                    <span class="nominal pemasukan">Rp1.000.000</span>
-                </div>
-                <div class="kartu-saldo">
-                    <span class="label">Total Pengeluaran</span>
-                    <span class="nominal pengeluaran">Rp63.000</span>
-                </div>
-                <div class="kartu-saldo">
-                    <span class="label">Sisa Saldo</span>
-                    <span class="nominal" id="sisa-saldo">Rp937.000</span>
-                </div>
+        <div class="collapse navbar-collapse" id="menuFintrack">
+          <ul class="navbar-nav ms-auto gap-1 mt-2 mt-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="transaksi.html"
+                >Riwayat Transaksi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tambah.html"
+                >Tambah Transaksi</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid px-4 my-4 flex-grow-1">
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2 mb-4"
+      >
+        <div>
+          <h1 class="h3 fw-bold mb-1">Dashboard</h1>
+          <p class="text-muted mb-0">
+            Ringkasan keuanganmu bulan September 2026
+          </p>
+        </div>
+        <a href="tambah.html" class="btn btn-fintrack"
+          >+ Tambah Transaksi</a
+        >
+      </div>
+
+      <div class="row g-3 mb-4">
+        <div class="col-6 col-xl-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="text-muted small">Total Pemasukan</span>
+              </div>
+              <p class="fs-5 fw-bold mb-2">Rp1.000.000</p>
+              <span class="badge bg-success-subtle text-success"
+                >1 transaksi</span
+              >
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="col-6 col-xl-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="text-muted small">Total Pengeluaran</span>
+              </div>
+              <p class="fs-5 fw-bold mb-2">Rp63.000</p>
+              <span class="badge bg-danger-subtle text-danger"
+                >2 transaksi</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-xl-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="text-muted small">Sisa Saldo</span>
+              </div>
+              <p class="fs-5 fw-bold mb-2">Rp937.000</p>
+              <span class="badge bg-success-subtle text-success"
+                >94% tersisa</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-xl-3">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span class="text-muted small">Jumlah Transaksi</span>
+              </div>
+              <p class="fs-5 fw-bold mb-2">3</p>
+              <span class="badge bg-secondary-subtle text-secondary"
+                >bulan ini</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <section>
-        <h2>Riwayat Transaksi</h2>
-        <p><a href="tambah.html">+ Tambah Transaksi Baru</a></p>
+      <div class="row g-3">
+        <div class="col-12 col-lg-7">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h2 class="h6 fw-bold mb-3">Pengeluaran per Kategori</h2>
+              <div class="table-responsive">
+                <table
+                  class="table table-hover align-middle mb-0 table-fintrack"
+                >
+                  <thead>
+                    <tr>
+                      <th scope="col">Kategori</th>
+                      <th scope="col" class="text-end">Jumlah</th>
+                      <th scope="col" class="text-end">Persentase</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Transportasi
+                      </td>
+                      <td class="text-end">Rp42.000</td>
+                      <td class="text-end">67%</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Makanan
+                      </td>
+                      <td class="text-end">Rp21.000</td>
+                      <td class="text-end">33%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="tabel-wrapper">
-    <table>
-        <caption>Riwayat Transaksi Bulan September 2026</caption>
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Tanggal</th>
-                <th>Keterangan</th>
-                <th>Jenis</th>
-                <th>Kategori</th>
-                <th>Nominal</th>
-                <th>Aksi</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="tengah">1</td>
-                <td>01-09-2026</td>
-                <td>uang saku bulanan</td>
-                <td class="tengah"><span class="jenis pemasukan">Pemasukan</span></td>
-                <td>Uang Saku</td>
-                <td class="angka">Rp1.000.000</td>
-                <td  class="tengah"><a href="detail1.html">Detail</a></td>
-            </tr>
-            <tr>
-                <td class="tengah">2</td>
-                <td>05-09-2026</td>
-                <td>sarapan</td>
-                <td class="tengah"><span class="jenis pengeluaran">Pengeluaran</span></td>
-                <td>Makanan</td>
-                <td class="angka">Rp21.000</td>
-                <td class="tengah"><a href="detail2.html">Detail</a></td>
-            </tr>
-        
-            <tr>
-                <td class="tengah">3</td>
-                <td>26-09-2026</td>
-                <td>Gojek</td>
-                <td class="tengah"><span class="jenis pengeluaran">Pengeluaran</span></td>
-                <td>Transportasi</td>
-                <td class="angka">Rp42.000</td>
-                <td class="tengah"><a href="detail3.html">Detail</a></td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
-    </section>
+        <div class="col-12 col-lg-5">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <h2 class="h6 fw-bold mb-0">Transaksi Terakhir</h2>
+                <a href="transaksi.html" class="small">Lihat semua</a>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li
+                  class="list-group-item px-0 d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <div class="fw-semibold">Gojek</div>
+                    <small class="text-muted"
+                      >26-09-2026 &middot; Transportasi</small
+                    >
+                  </div>
+                  <span class="text-danger fw-semibold">-Rp42.000</span>
+                </li>
+                <li
+                  class="list-group-item px-0 d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <div class="fw-semibold">Sarapan</div>
+                    <small class="text-muted"
+                      >05-09-2026 &middot; Makanan</small
+                    >
+                  </div>
+                  <span class="text-danger fw-semibold">-Rp21.000</span>
+                </li>
+                <li
+                  class="list-group-item px-0 d-flex justify-content-between align-items-center"
+                >
+                  <div>
+                    <div class="fw-semibold">Uang saku bulanan</div>
+                    <small class="text-muted"
+                      >01-09-2026 &middot; Uang Saku</small
+                    >
+                  </div>
+                  <span class="text-success fw-semibold">+Rp1.000.000</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer>
-    <p>&copy; 2026 FinTrack. Dibuat oleh Putri Nurhayati Balqis (103022400081).</p>
-  </footer>
-</body>
+    <footer class="bg-white border-top text-center text-muted py-3 small mt-4">
+      &copy; 2026 FinTrack. Dibuat oleh Putri Nurhayati Balqis (103022400081).
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

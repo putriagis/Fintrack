@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinTrack - Riwayat Transaksi</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-fintrack sticky-top">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand fw-bold fs-4" href="index.html">
+          <img
+            src="assets/logo-fintrack.png"
+            alt="Logo FinTrack"
+            class="me-2"
+          />
+          Fin<span>Track</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuFintrack"
+          aria-controls="menuFintrack"
+          aria-expanded="false"
+          aria-label="Buka menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuFintrack">
+          <ul class="navbar-nav ms-auto gap-1 mt-2 mt-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="transaksi.html"
+                >Riwayat Transaksi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tambah.html">Tambah Transaksi</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid px-4 my-4 flex-grow-1">
+      <div
+        class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-2 mb-4"
+      >
+        <div>
+          <h1 class="h3 fw-bold mb-1">Riwayat Transaksi</h1>
+          <p class="text-muted mb-0">
+            Daftar pemasukan dan pengeluaran bulan September 2026
+          </p>
+        </div>
+        <a href="tambah.html" class="btn btn-fintrack">+ Tambah Transaksi</a>
+      </div>
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              class="table table-hover align-middle mb-0 table-fintrack text-nowrap"
+            >
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Tanggal</th>
+                  <th scope="col">Keterangan</th>
+                  <th scope="col">Jenis</th>
+                  <th scope="col">Kategori</th>
+                  <th scope="col" class="text-end">Nominal</th>
+                  <th scope="col" class="text-center">Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>01-09-2026</td>
+                  <td class="fw-semibold">Uang saku bulanan</td>
+                  <td>
+                    <span class="badge bg-success-subtle text-success"
+                      >Pemasukan</span
+                    >
+                  </td>
+                  <td>Uang Saku</td>
+                  <td class="text-end fw-semibold">Rp1.000.000</td>
+                  <td class="text-center">
+                    <a href="detail1.html" class="btn btn-sm btn-light border"
+                      >Detail</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>05-09-2026</td>
+                  <td class="fw-semibold">Sarapan</td>
+                  <td>
+                    <span class="badge bg-danger-subtle text-danger"
+                      >Pengeluaran</span
+                    >
+                  </td>
+                  <td>Makanan</td>
+                  <td class="text-end fw-semibold">Rp21.000</td>
+                  <td class="text-center">
+                    <a href="detail2.html" class="btn btn-sm btn-light border"
+                      >Detail</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>26-09-2026</td>
+                  <td class="fw-semibold">Gojek</td>
+                  <td>
+                    <span class="badge bg-danger-subtle text-danger"
+                      >Pengeluaran</span
+                    >
+                  </td>
+                  <td>Transportasi</td>
+                  <td class="text-end fw-semibold">Rp42.000</td>
+                  <td class="text-center">
+                    <a href="detail3.html" class="btn btn-sm btn-light border"
+                      >Detail</a
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-white border-top text-center text-muted py-3 small mt-4">
+      &copy; 2026 FinTrack. Dibuat oleh Putri Nurhayati Balqis (103022400081).
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
