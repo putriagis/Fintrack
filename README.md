@@ -1,4 +1,9 @@
-# Fintrack
+Nama Project:
+Fintrack (Financial Tracker)
+
+Deskripsi:
+FinTrack adalah website pencatat keuangan pribadi yang mencatat pemasukan dan pengeluaran sehari-hari. Pengguna dapat melihat ringkasan saldo dan pengeluaran per kategori di dashboard, menelusuri riwayat transaksi dalam bentuk tabel, melihat detail setiap transaksi beserta foto struknya, serta menambahkan transaksi baru melalui form.
+
 Halaman Beranda:
 <img width="886" height="687" alt="image" src="https://github.com/user-attachments/assets/cfdb3948-c454-473e-b690-5ccc630b0cd8" />
 
@@ -8,10 +13,10 @@ Halaman Tambah Transaksi:
 Halaman Detail Transaksi-Pemasukan:
 <img width="973" height="795" alt="image" src="https://github.com/user-attachments/assets/852af8fe-ceeb-4e3a-9abe-cf29c901c26f" />
 
-Halaman Detail Transaksi-Pengeluaran(kategori Makanan):
+Halaman Detail Transaksi-Pengeluaran (kategori Makanan):
 <img width="1015" height="815" alt="image" src="https://github.com/user-attachments/assets/4097ced8-09b5-49a7-865c-a8530a2f9497" />
 
-Halaman Detail Transaksi-Pengeluaran(kategori Transportasi):
+Halaman Detail Transaksi-Pengeluaran (kategori Transportasi):
 <img width="946" height="808" alt="image" src="https://github.com/user-attachments/assets/c963f112-4446-45d8-8ad3-4f5bc4220022" />
 
 implementasi CSS pada Fintrack:
@@ -29,6 +34,28 @@ Halaman Responsive ukuran 700 x 608:
 <img width="699" height="609" alt="image" src="https://github.com/user-attachments/assets/9fb6dc7b-6682-453c-8e25-a671fbe245cb" />
 Halaman Responsive ukuran 500 x 608:
 <img width="502" height="606" alt="image" src="https://github.com/user-attachments/assets/d2b59003-5766-4a68-bf0a-a3ee05c8b147" />
+
+implementasi boostrap pada fintrack:
+halaman beranda/dashboard:
+<img width="1535" height="701" alt="image" src="https://github.com/user-attachments/assets/a9a2d019-187c-4001-9db3-da73946522fe" />
+halaman tambah transaksi (form):
+<img width="1523" height="703" alt="image" src="https://github.com/user-attachments/assets/4b1bb115-ebf3-4ed7-b135-4eeeee95b376" />
+halaman tabel data (riwayat transaksi):
+<img width="1535" height="697" alt="image" src="https://github.com/user-attachments/assets/ddec0816-4647-45f9-aa7c-6874729580a4" />
+tampilan navbar:
+tombol hamburger utnuk navigasi akan muncul ketika tampilannya dalam bentuk mobile (hp), berikut tampilannya:
+<img width="502" height="204" alt="image" src="https://github.com/user-attachments/assets/3b581134-089a-4c7e-ace3-8bb2a7152c61" />
+tampilan responsive:
+- desktop:
+  <img width="898" height="610" alt="image" src="https://github.com/user-attachments/assets/bcc41b7a-f11a-4f05-903d-1b4c3135229d" />
+- HP:
+  <img width="403" height="611" alt="image" src="https://github.com/user-attachments/assets/de7c2f14-c6b0-417c-afe7-80ccf06be051" />
+
+Alasan menggunakan boostrap:
+Karena project FinTrack ini merupakan project web yang tampilannya masih sederhana, yaitu berisi kartu ringkasan saldo, tabel riwayat transaksi, dan form tambah transaksi, sehingga membutuhkan komponen-komponen yang sederhana juga. Komponen pada Bootstrap seperti card, table, dan form sudah memenuhi kebutuhan tampilan FinTrack, dan tampilannya juga otomatis menyesuaikan ukuran layar HP maupun desktop. Maka dari itu, saya memilih menggunakan Bootstrap karena Bootstrap sudah menyiapkan semua komponen yang dibutuhkan oleh FinTrack.
+  
+
+
 
 
 
