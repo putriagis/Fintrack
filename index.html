@@ -42,14 +42,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="transaksi.html"
-                >Riwayat Transaksi</a
-              >
+              <a class="nav-link" href="transaksi.html">Riwayat Transaksi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tambah.html"
-                >Tambah Transaksi</a
-              >
+              <a class="nav-link" href="tambah.html">Tambah Transaksi</a>
             </li>
           </ul>
         </div>
@@ -62,13 +58,20 @@
       >
         <div>
           <h1 class="h3 fw-bold mb-1">Dashboard</h1>
-          <p class="text-muted mb-0">
-            Ringkasan keuanganmu bulan September 2026
-          </p>
+          <p class="text-muted mb-0">Ringkasan seluruh transaksi keuanganmu</p>
         </div>
-        <a href="tambah.html" class="btn btn-fintrack"
-          >+ Tambah Transaksi</a
-        >
+        <div class="d-flex gap-2">
+          <button
+            type="button"
+            id="btn-saldo"
+            class="btn btn-light border text-nowrap"
+          >
+            Sembunyikan Saldo
+          </button>
+          <a href="tambah.html" class="btn btn-fintrack text-nowrap"
+            >+ Tambah Transaksi</a
+          >
+        </div>
       </div>
 
       <div class="row g-3 mb-4">
@@ -78,9 +81,16 @@
               <div class="d-flex align-items-center gap-2 mb-3">
                 <span class="text-muted small">Total Pemasukan</span>
               </div>
-              <p class="fs-5 fw-bold mb-2">Rp1.000.000</p>
-              <span class="badge bg-success-subtle text-success"
-                >1 transaksi</span
+              <p class="fs-5 fw-bold mb-2">
+                <span class="nominal-saldo" id="total-pemasukan">Rp0</span>
+                <span class="nominal-tersembunyi" style="display: none"
+                  >Rp••••••</span
+                >
+              </p>
+              <span
+                class="badge bg-success-subtle text-success"
+                id="info-pemasukan"
+                >0 transaksi</span
               >
             </div>
           </div>
@@ -91,9 +101,16 @@
               <div class="d-flex align-items-center gap-2 mb-3">
                 <span class="text-muted small">Total Pengeluaran</span>
               </div>
-              <p class="fs-5 fw-bold mb-2">Rp63.000</p>
-              <span class="badge bg-danger-subtle text-danger"
-                >2 transaksi</span
+              <p class="fs-5 fw-bold mb-2">
+                <span class="nominal-saldo" id="total-pengeluaran">Rp0</span>
+                <span class="nominal-tersembunyi" style="display: none"
+                  >Rp••••••</span
+                >
+              </p>
+              <span
+                class="badge bg-danger-subtle text-danger"
+                id="info-pengeluaran"
+                >0 transaksi</span
               >
             </div>
           </div>
@@ -104,9 +121,14 @@
               <div class="d-flex align-items-center gap-2 mb-3">
                 <span class="text-muted small">Sisa Saldo</span>
               </div>
-              <p class="fs-5 fw-bold mb-2">Rp937.000</p>
-              <span class="badge bg-success-subtle text-success"
-                >94% tersisa</span
+              <p class="fs-5 fw-bold mb-2">
+                <span class="nominal-saldo" id="sisa-saldo">Rp0</span>
+                <span class="nominal-tersembunyi" style="display: none"
+                  >Rp••••••</span
+                >
+              </p>
+              <span class="badge bg-success-subtle text-success" id="info-saldo"
+                >0% tersisa</span
               >
             </div>
           </div>
@@ -117,9 +139,9 @@
               <div class="d-flex align-items-center gap-2 mb-3">
                 <span class="text-muted small">Jumlah Transaksi</span>
               </div>
-              <p class="fs-5 fw-bold mb-2">3</p>
+              <p class="fs-5 fw-bold mb-2" id="jumlah-transaksi">0</p>
               <span class="badge bg-secondary-subtle text-secondary"
-                >bulan ini</span
+                >semua transaksi</span
               >
             </div>
           </div>
@@ -142,22 +164,7 @@
                       <th scope="col" class="text-end">Persentase</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        Transportasi
-                      </td>
-                      <td class="text-end">Rp42.000</td>
-                      <td class="text-end">67%</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        Makanan
-                      </td>
-                      <td class="text-end">Rp21.000</td>
-                      <td class="text-end">33%</td>
-                    </tr>
-                  </tbody>
+                  <tbody id="tabel-kategori"></tbody>
                 </table>
               </div>
             </div>
@@ -173,41 +180,10 @@
                 <h2 class="h6 fw-bold mb-0">Transaksi Terakhir</h2>
                 <a href="transaksi.html" class="small">Lihat semua</a>
               </div>
-              <ul class="list-group list-group-flush">
-                <li
-                  class="list-group-item px-0 d-flex justify-content-between align-items-center"
-                >
-                  <div>
-                    <div class="fw-semibold">Gojek</div>
-                    <small class="text-muted"
-                      >26-09-2026 &middot; Transportasi</small
-                    >
-                  </div>
-                  <span class="text-danger fw-semibold">-Rp42.000</span>
-                </li>
-                <li
-                  class="list-group-item px-0 d-flex justify-content-between align-items-center"
-                >
-                  <div>
-                    <div class="fw-semibold">Sarapan</div>
-                    <small class="text-muted"
-                      >05-09-2026 &middot; Makanan</small
-                    >
-                  </div>
-                  <span class="text-danger fw-semibold">-Rp21.000</span>
-                </li>
-                <li
-                  class="list-group-item px-0 d-flex justify-content-between align-items-center"
-                >
-                  <div>
-                    <div class="fw-semibold">Uang saku bulanan</div>
-                    <small class="text-muted"
-                      >01-09-2026 &middot; Uang Saku</small
-                    >
-                  </div>
-                  <span class="text-success fw-semibold">+Rp1.000.000</span>
-                </li>
-              </ul>
+              <ul
+                class="list-group list-group-flush"
+                id="transaksi-terakhir"
+              ></ul>
             </div>
           </div>
         </div>
@@ -219,5 +195,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

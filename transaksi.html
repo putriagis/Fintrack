@@ -63,7 +63,7 @@
         <div>
           <h1 class="h3 fw-bold mb-1">Riwayat Transaksi</h1>
           <p class="text-muted mb-0">
-            Daftar pemasukan dan pengeluaran bulan September 2026
+            Daftar seluruh pemasukan dan pengeluaranmu
           </p>
         </div>
         <a href="tambah.html" class="btn btn-fintrack">+ Tambah Transaksi</a>
@@ -71,6 +71,19 @@
 
       <div class="card shadow-sm">
         <div class="card-body">
+          <div
+            class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2 mb-3"
+          >
+            <div class="btn-group" role="group" aria-label="Filter jenis transaksi">
+              <button type="button" class="btn btn-outline-secondary btn-filter active" data-jenis="semua">Semua</button>
+              <button type="button" class="btn btn-outline-secondary btn-filter" data-jenis="pemasukan">Pemasukan</button>
+              <button type="button" class="btn btn-outline-secondary btn-filter" data-jenis="pengeluaran">Pengeluaran</button>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <small class="text-muted" id="jumlah-tampil"></small>
+              <button type="button" id="btn-reset-data" class="btn btn-sm btn-light border text-nowrap">Kembalikan Data Awal</button>
+            </div>
+          </div>
           <div class="table-responsive">
             <table
               class="table table-hover align-middle mb-0 table-fintrack text-nowrap"
@@ -86,59 +99,7 @@
                   <th scope="col" class="text-center">Aksi</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>01-09-2026</td>
-                  <td class="fw-semibold">Uang saku bulanan</td>
-                  <td>
-                    <span class="badge bg-success-subtle text-success"
-                      >Pemasukan</span
-                    >
-                  </td>
-                  <td>Uang Saku</td>
-                  <td class="text-end fw-semibold">Rp1.000.000</td>
-                  <td class="text-center">
-                    <a href="detail1.html" class="btn btn-sm btn-light border"
-                      >Detail</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>05-09-2026</td>
-                  <td class="fw-semibold">Sarapan</td>
-                  <td>
-                    <span class="badge bg-danger-subtle text-danger"
-                      >Pengeluaran</span
-                    >
-                  </td>
-                  <td>Makanan</td>
-                  <td class="text-end fw-semibold">Rp21.000</td>
-                  <td class="text-center">
-                    <a href="detail2.html" class="btn btn-sm btn-light border"
-                      >Detail</a
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>26-09-2026</td>
-                  <td class="fw-semibold">Gojek</td>
-                  <td>
-                    <span class="badge bg-danger-subtle text-danger"
-                      >Pengeluaran</span
-                    >
-                  </td>
-                  <td>Transportasi</td>
-                  <td class="text-end fw-semibold">Rp42.000</td>
-                  <td class="text-center">
-                    <a href="detail3.html" class="btn btn-sm btn-light border"
-                      >Detail</a
-                    >
-                  </td>
-                </tr>
-              </tbody>
+              <tbody id="tabel-transaksi"></tbody>
             </table>
           </div>
         </div>
@@ -150,5 +111,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
