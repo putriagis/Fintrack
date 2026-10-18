@@ -77,6 +77,9 @@ halaman  melakukan tambah transaksi (melakukan tambahan transaksi pengeluaran):
 <img width="1535" height="731" alt="image" src="https://github.com/user-attachments/assets/9b49c128-488d-49b6-aa59-6787269015b6" />
 halaman riwayat transaksi setelah dilakukan tambah transaksi:
 <img width="1534" height="730" alt="image" src="https://github.com/user-attachments/assets/49a21688-e431-4736-b66a-eacc8822f417" />
+halaman melakukan klik kembalikan data awal setelah adanya penambahan transaksi,tampilannya akan memunculkan tampilan 3 data awal sebelum adanya penambahan transaksi:
+<img width="1535" height="732" alt="image" src="https://github.com/user-attachments/assets/55ed09ca-b300-4f01-835f-7861a2427408" />
+
 
 record interaksi website:
 https://github.com/user-attachments/assets/fb7a6228-3f8f-4de4-b5b0-edfbfdf921ce
