@@ -54,6 +54,40 @@ tampilan responsive:
 Alasan menggunakan boostrap:
 Karena project FinTrack ini merupakan project web yang tampilannya masih sederhana, yaitu berisi kartu ringkasan saldo, tabel riwayat transaksi, dan form tambah transaksi, sehingga membutuhkan komponen-komponen yang sederhana juga. Komponen pada Bootstrap seperti card, table, dan form sudah memenuhi kebutuhan tampilan FinTrack, dan tampilannya juga otomatis menyesuaikan ukuran layar HP maupun desktop. Maka dari itu, saya memilih menggunakan Bootstrap karena Bootstrap sudah menyiapkan semua komponen yang dibutuhkan oleh FinTrack.
   
+implementasi javascript dan jQuery pada fintrack:
+halaman sebelum diberikan action hide pada dashboard:
+<img width="1535" height="733" alt="image" src="https://github.com/user-attachments/assets/a4614a77-7c8e-442e-a85f-54aabffb27d8" />
+halaman setelah diberikan action hide pada dashboard:
+<img width="1535" height="734" alt="image" src="https://github.com/user-attachments/assets/2b70f15b-6339-425a-a2de-2cc1f44d001d" />
+halaman riwayat transaksi sebelum diberikan action apapun:
+<img width="1535" height="730" alt="image" src="https://github.com/user-attachments/assets/87ecbcff-c5e5-44e0-9bb1-f19cb0d97412" />
+halaman riwayat transaksi setelah melakukan klik opsi pemasukan:
+<img width="1534" height="736" alt="image" src="https://github.com/user-attachments/assets/c93d735d-3f48-4a89-89ad-0420865d6374" />
+halaman riwayat transaksi setelah melakukan klik opsi pengeluaran:
+<img width="1535" height="662" alt="image" src="https://github.com/user-attachments/assets/d5732636-81ff-486d-8a79-86b718bad1bf" />
+halaman riwayat transaksi sebelum dilakukan action "hapus":
+<img width="1535" height="729" alt="image" src="https://github.com/user-attachments/assets/76be5d7f-028b-47b3-b4c4-285a72284d2e" />
+halaman riwayat transaksi setelah dilakukan action "hapus":
+<img width="1535" height="729" alt="image" src="https://github.com/user-attachments/assets/b56dde94-2e37-44a0-b4fe-46b42c0b38ea" />
+halaman riwayat transaksi setelah melakukan klik kembalikan data awal:
+<img width="1534" height="732" alt="image" src="https://github.com/user-attachments/assets/c55b8efb-70a0-413e-b672-90ac7c4824e3" />
+halaman tambah transaksi (melakukan tambahan transaksi pengeluaran):
+<img width="1535" height="726" alt="image" src="https://github.com/user-attachments/assets/cccdddc6-0679-435b-b3df-6221c4d46802" />
+halaman  melakukan tambah transaksi (melakukan tambahan transaksi pengeluaran):
+<img width="1535" height="731" alt="image" src="https://github.com/user-attachments/assets/9b49c128-488d-49b6-aa59-6787269015b6" />
+halaman riwayat transaksi setelah dilakukan tambah transaksi:
+<img width="1534" height="730" alt="image" src="https://github.com/user-attachments/assets/49a21688-e431-4736-b66a-eacc8822f417" />
+
+record interaksi website:
+https://github.com/user-attachments/assets/fb7a6228-3f8f-4de4-b5b0-edfbfdf921ce
+
+catatan: Halaman detail saat ini masih menggunakan halaman yang telah dibuat pada Tugas 4 untuk tiga data awal, Untuk transaksi yang ditambahkan melalui form, halaman detail rencananya dirancang agar dapat menampilkan isi secara otomatis sesuai transaksi yang dipilih sehingga agar sesuai dengan yang diinginkan dan sesuai dengan tahap pengerjaan maka fitur detail tambahan akan saya implementasikan pada tahap berikutnya.
+
+
+
+
+
+
 
 
 
